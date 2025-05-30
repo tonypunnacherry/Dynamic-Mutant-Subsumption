@@ -25,8 +25,8 @@ Note: I recommend running this on an Anaconda environment or Python notebook for
 
 ## Running the Application
 1. Download and unzip the program source code.
-2. Run the Flask app: python app.py
-3. By default, the app runs at [127.0.0.1:5000]([url](http://127.0.0.1:5000))
+2. Run the Flask app: `python app.py`
+3. By default, the app runs at [127.0.0.1:5000](http://127.0.0.1:5000)
 
 ## Using the Web Interface
 1. Open the app URL in your browser.
