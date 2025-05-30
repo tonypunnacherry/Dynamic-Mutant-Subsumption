@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mutant Subsumption Graph</title>
+    <style>
+      #spinner {
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 2em;
+          background: rgba(255,255,255,0.8);
+          padding: 20px;
+          border-radius: 8px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Upload KillMap CSV</h1>
+    <form method="post" enctype="multipart/form-data" onsubmit="showLoading()">
+        <input type="file" name="csv_file" accept=".csv" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if dominators %}
+        <h2>DMSG Visualization</h2>
+        <img src="{{ url_for('static', filename='dmsg.png') }}" alt="DMSG">
+        <h3>Dominator Mutants (count: {{ dominators | length }})</h3>
+        <ul>
+            {% for dom in dominators %}
+                <li>{{ dom }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    
+    <div id="spinner">Processing... 🔄</div>
+
+    <script>
+    function showLoading() {
+        document.getElementById('spinner').style.display = 'block';
+    }
+    </script>
+</body>
+</html>
