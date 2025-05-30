@@ -1,4 +1,4 @@
-# User Guide
+# Dynamic Mutant Subsumption Graph Generator
 To run the app, please download the zip file attached in the Canvas submission
 
 ## Summary
