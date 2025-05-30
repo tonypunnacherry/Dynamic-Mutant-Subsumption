@@ -1,5 +1,4 @@
 # Dynamic Mutant Subsumption Graph Generator
-To run the app, please download the zip file attached in the Canvas submission
 
 ## Summary
 This application is designed to analyze the effectiveness of mutation testing by building a Dynamic Mutant Subsumption Graph (DMSG) from a set of test results. The DMSG helps researchers and developers:
