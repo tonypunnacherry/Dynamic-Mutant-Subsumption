@@ -6,6 +6,7 @@ This application is designed to analyze the effectiveness of mutation testing by
 - Identify a minimal set of essential mutants.
 - Improve test suite efficiency by focusing on impactful mutants.
 - Study the hierarchical relationships among mutants based on test behavior.
+
 You can learn more about the concept by reading [this paper](https://homes.cs.washington.edu/~rjust/publ/prioritizing_mutants_tcap_icse_2022.pdf).
 
 ## Prerequisites
