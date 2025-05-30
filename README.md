@@ -21,12 +21,12 @@ You can also install them manually:
 - matplotlib
 - networkx
 
-Each row indicates whether a test kills a mutant.
+Note: I recommend running this on an Anaconda environment or Python notebook for simplicity of installation. If you are having trouble, try running pip using administrator command line.
 
 ## Running the Application
-Download and unzip the program source code.
-Run the Flask app: python app.py
-By default, the app runs at http://127.0.0.1:5000
+1. Download and unzip the program source code.
+2. Run the Flask app: python app.py
+3. By default, the app runs at [127.0.0.1:5000]([url](http://127.0.0.1:5000))
 
 ## Using the Web Interface
 1. Open the app URL in your browser.
@@ -41,6 +41,8 @@ The uploaded CSV must have 3 columns:
 TestNo is an integer
 MutantNo is an integer
 Status is a string that is either "FAIL", "TIME", or "EXC"
+
+Each row indicates whether a test kills a mutant.
 
 You can also generate kill maps for a sample Triangle program using [this mutant analysis program](https://bitbucket.org/rjust/mutation).
 
